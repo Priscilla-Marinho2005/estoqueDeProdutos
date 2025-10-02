@@ -7,6 +7,27 @@ body {
     color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+    body {
+        background-color: black;
+    }
+
+    .tabela {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+    }
+
+    thead {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
+
+
 #tabela {
     display: table;
 }
@@ -119,4 +140,18 @@ td {
     background-color: #ccc;
     color: #000;
     padding: 1%;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-color: black;
+    }
+
+    table {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+    }
+
+    
 }
