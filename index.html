@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Estoque de Produtos</title>
+</head>
+<body>
+    <header>
+        <h1>Estoque</h1>
+    </header>
+
+    <section class="resumo">
+        <div>
+            <p>Total de Produtos Cadastrados:</p>
+            <div class="valorTotalCadastrados">0</div>
+            <div class="linkValoresProdutos"><a href="#tabela">Ver Produtos</a></div>
+        </div>
+
+        <div>
+            <p>Total de Investimentos:</p>
+            <div class="valorTotalInvestimento">R$ 0,00</div>
+            <div class="linkValoresProdutos">Margem de Lucro:</div>
+        </div>
+
+        <div>
+            <p>Valor Total de Produtos:</p>
+            <div class="valorTotalProdutos">R$ 0,00</div>
+            <div class="linkValoresProdutos">Ver Resumo de vendas</div>
+        </div>
+
+        <div>
+            <p>Produtos com Estoque baixo:</p>
+            <div class="valorEstoqueBaixo">0</div>
+            <div class="linkValoresProdutos"><a href="tabelaEstoqueBaixo.html" target="_blank" rel="noopener noreferrer"id="linkEstoqueBaixo">Ver Produtos</a></div>
+        </div>
+    </section>
+
+    <main>
+        <button type="button" id="btnCadastroProduto">Cadastrar novo Produto</button>
+
+        <form class="formulario">
+            <input type="text" id="nomeProduto" placeholder="Nome do Produto" required>
+            <input type="text" id="categoriaProduto" placeholder="Categoria do Produto" required>
+            <input type="number" id="quantidadeProduto" placeholder="Quantidade" required>
+            <input type="number" id="valorUnitario" placeholder="Valor Unitário" required>
+            <input type="number" id="valorVenda" placeholder="Valor de Venda" required>
+            <button type="submit" id="btnCadastrar">Cadastrar</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Categoria</th>
+                    <th>Quantidade</th>
+                    <th>Val. Unitário</th>
+                    <th>Val. Venda</th>
+                    <th>Vendidos</th>
+                    <th>Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+            </tbody>
+
+        </table>
+    </main>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>
